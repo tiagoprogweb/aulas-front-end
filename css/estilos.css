@@ -80,6 +80,9 @@ figure {
 /* Tornando as imagens "responsivas" */
 img { max-width: 100%; }
 
+/* Seletor descendente */
+p a { color: red; }
+
 
 
 
