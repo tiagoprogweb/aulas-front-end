@@ -98,4 +98,34 @@ li::marker {
     font-size: 16px;
 }
 
+/* Regras para o menu */
+nav { text-align: center; }
+
+/* Regra para o estado inicial do link */
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: darkblue;
+    background-color: lightblue;
+    width: 50%;
+    display: inline-block;
+    padding: 30px;
+
+    /* Alterando o Box Model fazendo com que
+    padding e border não dê BO nas dimensões
+    finais do elemento! */
+    box-sizing: border-box;
+}
+
+
+
+/* Regra para o estado do link acionado */
+
+
+
+
+
+
+
+
 
