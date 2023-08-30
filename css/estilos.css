@@ -109,7 +109,7 @@ nav a {
     background-color: lightblue;
     width: 50%;
     display: inline-block;
-    padding: 30px;
+    padding: 10px;
 
     /* Alterando o Box Model fazendo com que
     padding e border não dê BO nas dimensões
@@ -117,9 +117,39 @@ nav a {
     box-sizing: border-box;
 }
 
+/* Seletor Pseudo-classe :first-child */
+nav a:first-child { 
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+/* Seletor pseudo-classe :last-child */
+nav a:last-child { 
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
 
 
-/* Regra para o estado do link acionado */
+
+/* Regra para o estado do link acionado
+Pseudo-classe :hover (passar o mouse)
+Pseudo-classe :focus (receber foco) */
+nav a:hover, nav a:focus {
+    background-color: darkblue;
+    color: white;
+}
+
+figure img { 
+    filter: grayscale(); 
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transition: 2s;
+}
+
+figure img:hover { 
+    clip-path: polygon(0 0, 51% 6%, 100% 0, 100% 50%, 100% 100%, 50% 94%, 0 100%);
+    filter: none; 
+}
+
 
 
 
