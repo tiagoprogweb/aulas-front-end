@@ -8,6 +8,10 @@ body {
 }
 
 h1 { 
+    animation-name: caindo;
+    animation-duration: 2s;
+    /* animation-iteration-count: infinite; */
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white; 
     background-color: black;
@@ -140,16 +144,30 @@ nav a:hover, nav a:focus {
 }
 
 figure img { 
-    filter: grayscale(); 
-    clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-    transition: 2s;
+    filter:grayscale(); 
+    /* clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%); */
+    transition: 0.5s;
+    transform: scale(0.8);
 }
 
 figure img:hover { 
-    clip-path: polygon(0 0, 51% 6%, 100% 0, 100% 50%, 100% 100%, 50% 94%, 0 100%);
+    /* clip-path: polygon(0 0, 51% 6%, 100% 0, 100% 50%, 100% 100%, 50% 94%, 0 100%); */
     filter: none; 
+    transform: scale(1) /* rotate(360deg) */;
 }
 
+/* Regras de Animação */
+
+@keyframes caindo {
+    /* Como começa: */
+    from { 
+        transform: translateY(-100px);
+        opacity: 0; 
+    }
+
+    /* Como termina: */
+    to { transform: translateY(0); }
+}
 
 
 
