@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
 /* Neste arquivo, faremos TODAS as REGRAS
 CSS necessárias para a formatação do site. */
 
@@ -12,7 +14,7 @@ h1 {
     animation-duration: 2s;
     /* animation-iteration-count: infinite; */
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Rubik Iso', cursive;
     color: white; 
     background-color: black;
     padding: 10px;
@@ -37,7 +39,11 @@ h1 {
 
 #container {
     background-color: white;
+
     width: 80%;
+    max-width: 800px;
+    min-width: 500px;
+
     margin: auto;
     box-shadow: black 0 0 5px;
     padding: 3%;
