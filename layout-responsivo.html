@@ -43,6 +43,38 @@
         height: 100px;
     }
 
+    /* Regras condicionais (Media Queries) */
+    @media screen and (min-width: 522px) {
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 { width: 40%; }
+        nav { 
+            width: 60%; 
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+
+    @media screen and (min-width: 773px) {
+        #colunaA { width: 70%; }
+        #colunaB { width: 30%; }
+        #colunaC { width: 100%; }       
+
+        main {
+            display: flex;
+
+            /* flex-wrap quando habilitado
+            faz com que os elementos sejam "quebrados"
+            para a linha de baixo caso não haja espaço. */
+            flex-wrap: wrap;
+        }
+    }
+
+
 </style>
 
 </head>
